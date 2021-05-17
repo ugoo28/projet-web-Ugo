@@ -1,0 +1,14 @@
+@import "header.css";
+@import "global.css";
+@import "style.css";
+@import "fontFamily.css";
+@import "about.css";
+@import "projects.css";
+@import "icon.css";
+@import "clients.css";
+@import "news.css";
+@import "footer.css";
+
+:root {
+  --color: #cee002;
+}

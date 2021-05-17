@@ -1,0 +1,61 @@
+.header-container {
+    display: flex;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+  }
+  
+  .left-header {
+    display: flex;
+    align-items: center;
+  }
+  
+  .left-header img {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .left-header .brand {
+    margin-left: 5px;
+  }
+  .left-header .brand h3 {
+    line-height: 10px;
+    font-size: 16px;
+  }
+  .left-header .brand p {
+    line-height: 12px;
+  }
+  
+  .header-separator {
+    height: 40px;
+    width: 1px;
+    background-color: #999;
+    margin: 0 20px;
+  }
+  
+  .right-header {
+    display: flex;
+    align-items: center;
+  }
+  
+  .right-header .social a {
+    text-decoration: none;
+  }
+  
+  @media (max-width: 660px) {
+    .right-header p,
+    .header-separator {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .right-header .social {
+      display: none;
+    }
+  }
+  

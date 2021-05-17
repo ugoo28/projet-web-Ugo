@@ -1,0 +1,147 @@
+section.projects {
+    display: flex;
+    flex-direction: column;
+    margin: 100px 0px;
+  }
+  
+  .projects > .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    margin: 0 auto;
+    width: 1280px;
+  }
+  
+  @media (max-width: 1380px) {
+    .projects > .top {
+      width: 1100px;
+    }
+  }
+  
+  @media (max-width: 1170px) {
+    .projects > .top {
+      width: 900px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .top > .top-right {
+      margin-top: 15px;
+    }
+  }
+  
+  @media (max-width: 950px) {
+    .projects > .top {
+      width: 780px;
+    }
+  }
+  
+  @media (max-width: 820px) {
+    .projects > .top {
+      width: auto;
+    }
+  }
+  
+  .top > .top-right {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .top-right p {
+    cursor: pointer;
+    transition: color 0.4s ease;
+  }
+  
+  .top-right p:not(:first-of-type) {
+    margin-left: 10px;
+  }
+  
+  .top-right p.active {
+    color: var(--color);
+  }
+  
+  .top-right p:hover {
+    color: var(--color);
+  }
+  
+  section.projects .bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+    margin-top: 15px;
+  }
+  
+  section.projects .bottom .projects-item {
+    width: 360px;
+    height: 480px;
+  
+    margin: 15px;
+  
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .projects-item img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .projects-item .projects-hover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease;
+  }
+  
+  .projects-hover:hover {
+    background: rgba(206, 224, 2, 0.85);
+  }
+  
+  .projects-hover .projects-title {
+    position: absolute;
+    bottom: 50px;
+    color: white;
+    margin-right: 110px;
+    margin-left: 20px;
+  }
+  
+  .projects-hover:hover .projects-title {
+    top: 30px;
+    color: black;
+  }
+  
+  .projects-hover .projects-description {
+    margin: 0 20px;
+    display: none;
+  }
+  
+  .projects-hover:hover .projects-description {
+    position: absolute;
+    color: black;
+    top: 200px;
+    display: flex;
+  }
+  
+  .projects-hover .more {
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    margin: 0 20px;
+  
+    text-decoration: none;
+  }
+  
+  .projects-hover .more i {
+    position: relative;
+    top: 2px;
+    margin-left: 5px;
+  }
+  
+  .projects-hover:hover .more {
+    color: black;
+  }
+  
